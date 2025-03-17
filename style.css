@@ -7,23 +7,20 @@ body {
     background-image: url(abstract-navy-red-background-design-sr17012401.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    justify-content: center; /* Center the card */
+    justify-content: left; 
     align-items: center; 
     height: 100vh; 
-    text-align: center;
 }
 
 .card {
-    width: 100%;
-    max-width: 400px; /* Make the card width responsive */
-    padding: 2rem 2rem; /* Reduce padding on smaller screens */
+    width: 190px;
+    padding: 5rem 5rem;
     border-radius: 10px;
-    background: rgba(178, 181, 223, 0.25);
+    text-align: center;
+    background: #b2b5df41;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(15, 16, 20, 0.31);
-    margin-left: auto;
-    margin-right: auto;
-    /* Ensure the card is centered in all screen sizes */
+    box-shadow: 0 4px 10px #0f10144e;
+    margin-left: 30vh;
 }
 
 .field {
@@ -105,31 +102,57 @@ p {
     padding: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
+/* التعديلات الخاصة بالتصميم للجوال */
+@media (max-width: 768px) {
     .card {
-        padding: 1.5rem;
-        width: 80%;
+        width: 80%; /* جعل عرض البطاقة أكبر ليتناسب مع شاشات الجوال */
+        padding: 2rem; /* تقليل المسافة حول محتوى البطاقة */
+        margin-left: 10%; /* تعديل الهامش ليكون مناسبًا على الجوال */
     }
 
     .title {
-        font-size: 1.2em; /* Adjust title size for small screens */
+        font-size: 1.2em; /* تصغير حجم العنوان ليتناسب مع الجوال */
     }
 
     .input-field {
-        font-size: 1em; /* Larger input text for easier typing */
+        font-size: 1em; /* جعل الخط داخل الحقول أكبر لسهولة القراءة */
     }
 
     .btn {
-        font-size: 1em;
-        padding: 0.8em 1.5em;
+        font-size: 1em; /* جعل حجم الخط أكبر قليلاً للزر */
+        padding: 1em 1.5em; /* زيادة حجم الزر لتسهيل النقر عليه */
     }
 
     .btn-link {
-        font-size: 1em;
+        font-size: 1em; /* تصغير حجم الخط للرابط */
     }
 
     p {
-        font-size: 0.8em; /* Adjust footer text for mobile */
+        font-size: 0.8em; /* تعديل حجم النص في الفوتر للجوال */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* جعل البطاقة أكثر اتساعًا على الشاشات الصغيرة */
+        padding: 1.5rem; /* تقليل المسافة حول البطاقة أكثر */
+        margin-left: 5%; /* زيادة الهامش من الجانبين لتناسب الشاشات الأصغر */
+    }
+
+    .title {
+        font-size: 1.1em; /* تقليل حجم العنوان أكثر في الشاشات الصغيرة */
+    }
+
+    .input-field {
+        font-size: 1.1em; /* زيادة حجم النص داخل الحقول لتسهيل الكتابة */
+    }
+
+    .btn {
+        font-size: 1.1em; /* زيادة حجم الزر ليصبح أكثر وضوحًا على الشاشات الصغيرة */
+        padding: 1.2em 2em; /* جعل الزر أكبر لسهولة التفاعل */
+    }
+
+    .btn-link {
+        font-size: 1.1em; /* تكبير حجم الخط في الرابط */
     }
 }
